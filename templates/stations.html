@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Stations — Offshore Wind Energy Forecasting{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h2>Select a Station</h2>
+</div>
+<div class="stations-grid">
+    {% for key, name in stations.items() %}
+    <a href="/dashboard/{{ key }}" class="station-card">
+        <div class="station-icon">💨</div>
+        <h3>{{ name }}</h3>
+        <span class="station-link">View Dashboard →</span>
+    </a>
+    {% endfor %}
+</div>
+{% endblock %}

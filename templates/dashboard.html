@@ -12,7 +12,7 @@
 {% block content %}
 <div class="dashboard-wrap">
     <div class="page-header">
-        <h2>Forecast Dashboard</h2>
+        <h2>{{ data.station_name }} — Forecast Dashboard</h2>
         <span class="badge">{{ data.data_source }}</span>
     </div>
 
@@ -40,7 +40,7 @@
     </div>
 
     <div class="chart-card">
-        <h3>Hourly Power Output - Predicted vs Actual <span class="unit">(MW)</span></h3>
+        <h3>Hourly Power Output — Predicted vs Actual <span class="unit">(MW)</span></h3>
         <div class="chart-container">
             <canvas id="forecastChart"></canvas>
         </div>
